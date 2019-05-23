@@ -1,0 +1,9 @@
+﻿.page-header {
+    padding-bottom: 9.5px;
+    margin: 55px 0 21px;
+    border-bottom: 1px solid transparent;
+}
+
+select, input {
+    border: 2px solid;
+}

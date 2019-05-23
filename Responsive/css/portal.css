@@ -1,0 +1,35 @@
+﻿@media (max-width: 480px) {
+    .mpp_formField label {
+        display: block;
+    }
+    .mpp_formField div {
+        display: block;
+    }
+
+    h1 {
+        font-size: 16pt;
+    }
+
+    h2 {
+        font-size: 14pt;
+    }
+
+    h3 {
+        font-size: 13pt;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+textarea {
+    width: 90%;
+}

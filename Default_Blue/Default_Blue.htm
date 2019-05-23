@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Ministry Platform Default Skin</title>
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Site / Skin / Theme CSS-->
+    <link href="[MPP_SkinPath]/css/site.css" rel="stylesheet" />
+    <!-- Portal Element CSS -->
+    <link href="[MPP_SkinPath]/css/portal.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Portal</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Public <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="online_giving.aspx">Online Giving</a></li>
+
+                            <!-- Uncomment the following Line and Update with Church OGCC Url for OGCC Integration -->
+                            <!--<li><a href="https://mpdemo.onlinegiving.cc/donate/index?mp_token=[MPP_User_Data]"><i class="fa fa-money"></i> Login to CC</a></li>-->
+
+                            <li><a href="mission_trip_giving.aspx">Mission Trip Giving</a></li>
+                            <li><a href="mission_trip_registration.aspx">Mission Trip Registration</a></li>
+                            <li><a href="make_a_pledge.aspx">Make A Pledge</a></li>
+                            <li><a href="event_calendar.aspx">Event Calendar</a></li>
+                            <li><a href="event_calendar.aspx?filter=registrationevents:1">Registrations</a></li>
+                            <li><a href="group_finder.aspx">Group Finder</a></li>
+                            <li><a href="opportunity_finder.aspx">Opportunity Finder</a></li>
+                            <li><a href="group_survey.aspx">Find A Group By Survey</a></li>
+                            <li><a href="opportunity_survey.aspx">Find An Opportunity By Survey</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="my_user_account.aspx">My User Account</a></li>
+                            <li><a href="my_groups.aspx">My Groups</a></li>
+                            <li><a href="my_events.aspx">My Events</a></li>
+                            <li><a href="my_mission_trips.aspx">My Mission Trips</a></li>
+                            <li><a href="my_purchase_history.aspx">My Purchase History</a></li>
+                            <li><a href="my_giving.aspx">My Giving</a></li>
+                            <li><a href="my_contribution_statement.aspx">My Contribution Statement</a></li>
+                            <li><a href="my_directory.aspx">Online Directory</a></li>
+                            <li><a href="my_pledges.aspx">My Pledges</a></li>
+                            <li><a href="my_calls.aspx">My Calls</a></li>
+                            <li><a href="my_subscriptions.aspx">My Subscriptions</a></li>
+                            <li><a href="my_profile.aspx">My Survey</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>[MPP_UserLogin]</li>
+                    <li>[MPP_UserLogout]</li>
+                    <li>[MPP_ViewCart]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-9">
+                    <div id="mainBody">
+                        [MPP_PageForm]
+                    </div>
+                </div>
+
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-3" style="margin-top: 20px;">
+                    <div class="list-group table-of-contents">
+                        <a class="list-group-item" href="online_giving.aspx">Online Giving</a>
+                        <a class="list-group-item" href="make_a_pledge.aspx">Make a Pledge</a>
+                        <a class="list-group-item" href="event_calendar.aspx">Event Calendar</a>
+                        <a class="list-group-item" href="group_finder.aspx">Group Finder</a>
+                        <a class="list-group-item" href="my_giving.aspx">My Giving</a>
+                        <a class="list-group-item" href="my_user_account.aspx">My User Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="pull-right">Copyright 2016 ThinkMinistry</div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified BootStrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Load and Launch the Class Translater -->
+    <script src="[MPP_SkinPath]/js/portal.js" type="text/javascript"></script>
+
+</body>
+</html>
