@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="/portal/css/MPP_Style_Bundle.min.css?v=9.10.27" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Ministry Platform Portal Responsive Skin</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="navbar.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="./_DomainData/support.ministryplatform.com/skins/Responsive/css/portal.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+	<script type="text/javascript">var $mpp = $.noConflict(true); console.log('MPP Jquery Loaded: ' + $mpp().jquery);</script>
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script type="text/javascript">
+	   var portalPhoneMask = 'xxx-xxx-xxxx';
+	   function loadPortalScripts() {
+	       console.log('Loading Portal Scripts');
+	       var script = document.createElement('script');
+	       script.onload = function() {
+	           console.log('Portal Script Bundle Loaded');
+	           loaded = true;
+	       };
+	       script.src = '/portal/js/MPP_Scripts.min.js?v=9.10.27';
+	       document.getElementsByTagName('head')[0].appendChild(script);
+	   }
+	   loadPortalScripts();
+	   var DEBUG = true;
+	</script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./">Responsive</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Public <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online_giving.aspx">Online Giving</a></li>
+                                <li><a href="mission_trip_giving.aspx">Mission Trip Giving</a></li>
+                                <li><a href="mission_trip_registration.aspx">Mission Trip Registration</a></li>
+                                <li><a href="make_a_pledge.aspx">Make A Pledge</a></li>
+                                <li><a href="event_calendar.aspx">Event Calendar</a></li>
+                                <li><a href="group_finder.aspx">Group Finder</a></li>
+                                <li><a href="opportunity_finder.aspx">Opportunity Finder</a></li>
+                                <li><a href="group_survey.aspx">Find A Group By Survey</a></li>
+                                <li><a href="opportunity_survey.aspx">Find An Opportunity By Survey</a></li>
+                                <li><a href="get_form.aspx?id=01fb904a-0aa6-4eaa-bde4-f88e3f8d888e">Submit a Prayer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="my_user_account.aspx">My User Account</a></li>
+                                <li><a href="my_groups.aspx">My Groups</a></li>
+                                <li><a href="groupleaderresources">Group Leader Resources</a></li>
+                                <li><a href="my_events.aspx">My Events</a></li>
+                                <li><a href="my_mission_trips.aspx">My Mission Trips</a></li>
+                                <li><a href="missiontripdetails">Mission Trip Forms &amp; Info</a></li>
+                                <li><a href="my_purchase_history.aspx">My Purchase History</a></li>
+                                <li><a href="my_giving.aspx">My Giving</a></li>
+                                <li><a href="my_contribution_statement.aspx">My Contribution Statement</a></li>
+                                <li><a href="my_directory.aspx">Online Directory</a></li>
+                                <li><a href="my_pledges.aspx">My Pledges</a></li>
+                                <li><a href="my_calls.aspx">My Calls</a></li>
+                                <li><a href="my_subscriptions.aspx">My Subscriptions</a></li>
+                                <li><a href="my_profile.aspx">My Survey</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a id="userLink" href="/portal/my_user_account.aspx">Test, Bmz</a></li>
+                        <li><a id="logoutLink" href="login.aspx?logout=true">Logout</a></li>
+                        <li><a id="cartLink" href="transaction_summary.aspx">Show Summary (0)</a></li>
+
+                        <!--
+                            <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                            <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                        -->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div>
+            <form name="form1" method="post" action="/portal/group_finder.aspx" id="form1" class="mpp_page_GroupFinder">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/portal/WebResource.axd?d=6SO8LGg-8nq3N41eTdFXHLNL3YVVHWclhDb4x_yLon8gkVfByxbEn1tPa1_fPJaiq4ann4C_wQtl-CJCRJ0A-eYF7dmB2k3lSegCC74RQ4Q1&amp;t=636765320300000000" type="text/javascript"></script>
+
+
+<script src="/portal/ScriptResource.axd?d=80pm4dNdat6G7eFwOso0Fylv04_ITNTcp8L_y9uS8BhHGnT-CaPtqERUYnLel4c42yUmurzrOtPyIdxvXTSk5DdfCsdL-mqNElx5OyarUQyYpLI1SsiHMOBH0pOCo9lVnJpfzz9IdDyqPwmY6CTjKtWsTNN2ef332R00zq_Ae9c1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="/portal/ScriptResource.axd?d=7Cgfh1iG_4vCph2-OBqRj6-rIvFJEstbnOan7zVwI4-DYjDPs9J6kums9BdxEzDrswohvm8ZFOgCRA7bLQVqxW_84cuzRSPDg8Nw_VlCVme6FROnOP4nWiA4Jf3o45XNMCdMTSWGggNQQa05tFqCqjzT3tCw6sbY1K18FvljYI2_JlJS7YsJfxSFnuQ5OLsX0&amp;t=ffffffff999c3159" type="text/javascript"></script>
+    <input type="hidden" name="hdnMinistryId" id="hdnMinistryId" />
+    <div id="UpdateProgress1" style="display:none;">
+	
+                <div class="mpp_progressIndicator">Loading, please wait...</div>
+            
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tUpdatePanel1',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="UpdatePanel1">
+	 
+
+
+    <h1 class="mpp_formTitle">Find a Group</h1>
+
+
+        <div id="mpp_group_finder_tr_campus" class="mpp_formField">
+            <label>Campus:</label>
+            <div class="mpp_formControl">
+                <select name="ddlCampus" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlCampus\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlCampus">
+		<option selected="selected" value="0">Any Campus</option>
+		<option value="3">Internet Campus</option>
+		<option value="1">Central Campus</option>
+		<option value="5">Churchwide @ Activities</option>
+		<option value="7">En Espanol</option>
+		<option value="16">FCBC LA</option>
+		<option value="17">MPUG</option>
+		<option value="10">North Campus</option>
+		<option value="18">Rocky Mountain Calvary</option>
+
+	</select>
+            </div>
+        </div>
+        <div id="mpp_group_finder_tr_parent_group" class="mpp_formField">
+            <label>Neighborhood:</label>
+            <div class="mpp_formControl">
+                <select name="ddlParentGroup" id="ddlParentGroup">
+		<option value="0">All Neighborhood</option>
+		<option value="154">5s &amp; Ks</option>
+		<option value="230">Boys Who Don&#39;t Snore</option>
+		<option value="329">Early Morning Mountain Climbers</option>
+		<option value="10">Elementary</option>
+		<option value="30">Happy Couples</option>
+		<option value="128">Happy Families Community</option>
+		<option value="12">High School</option>
+		<option value="321">Meat Eaters</option>
+		<option value="11">Middle School</option>
+		<option value="367">Music Parent Group</option>
+		<option value="31">Northeast Community</option>
+		<option value="8">Nursery</option>
+		<option value="9">Preschool</option>
+		<option value="140">Southeast Community</option>
+		<option value="290">Summer Camp 2014</option>
+
+	</select>
+            </div>
+        </div>
+        <div id="mpp_group_finder_tr_zip" class="mpp_formField">
+            <label>City or Postal Code:</label>
+            <div class="mpp_formControl">
+                <input name="txtZip" type="text" id="txtZip" />
+            </div>
+        </div>
+        <div id="mpp_group_finder_tr_keyword" class="mpp_formField">
+            <label>Key Word:</label>
+            <div class="mpp_formControl">
+                <input name="txtKeyWord" type="text" id="txtKeyWord" />
+            </div>
+        </div>
+        <div id="mpp_group_finder_tr_groupfocus" class="mpp_formField">
+            <label>Group Focus:</label>
+            <div class="mpp_formControl">
+                <select name="ddlGroupFocus" id="ddlGroupFocus" class="dropdowns">
+		<option value="0">All Group Focuses</option>
+		<option value="1">Bible &amp; Book Study</option>
+		<option value="3">Community Help Projects</option>
+		<option value="6">Fake Group Focus</option>
+		<option value="2">Finances</option>
+		<option value="4">International Missions</option>
+		<option value="9">Leader Training</option>
+		<option value="8">Life Groups</option>
+
+	</select>
+            </div>
+        </div>
+        <div id="mpp_group_finder_tr_lifestage" class="mpp_formField">
+            <label>Life Stage:</label>
+            <div class="mpp_formControl">
+                <select name="ddlLifeStage" id="ddlLifeStage" class="dropdowns">
+		<option value="0">All Life Stages</option>
+		<option value="1">College &amp; Career</option>
+		<option value="3">Empty Nesters</option>
+		<option value="6">Fake Life Stage</option>
+		<option value="7">Retirement</option>
+		<option value="2">Young Marrieds</option>
+
+	</select>
+            </div>
+        </div>
+                        
+        <div id="mpp_group_finder_tr_meetingdays" class="mpp_formField">
+            <label>Meeting Days:</label>
+            <div class="mpp_formControl">
+                <div class="mpp_formControlGroup">
+                    <input id="chkSun" type="checkbox" name="chkSun" /><label for="chkSun">Su</label>
+                </div>
+                <div class="mpp_formControlGroup">
+                    <input id="chkMon" type="checkbox" name="chkMon" /><label for="chkMon">M</label>
+                    </div>
+                <div class="mpp_formControlGroup">
+                    <input id="chkTue" type="checkbox" name="chkTue" /><label for="chkTue">T</label>
+                </div>
+                <div class="mpp_formControlGroup">
+                    <input id="chkWed" type="checkbox" name="chkWed" /><label for="chkWed">W</label>
+                </div>
+                <div class="mpp_formControlGroup">
+                    <input id="chkThu" type="checkbox" name="chkThu" /><label for="chkThu">Th</label>
+                </div>
+                <div class="mpp_formControlGroup">
+                    <input id="chkFri" type="checkbox" name="chkFri" /><label for="chkFri">F</label>
+                </div>
+                <div class="mpp_formControlGroup">
+                    <input id="chkSat" type="checkbox" name="chkSat" /><label for="chkSat">Sa</label>
+                </div>
+            </div>
+        </div>
+        <div id="mpp_group_finder_tr_meetingtimes" class="mpp_formField">
+            <label>Meeting Times:</label>
+            <div class="mpp_formControl">
+                <table>
+                    <tr>
+                        <td><div class="mpp_formControlGroup"><input id="chkMorning" type="checkbox" name="chkMorning" /><label for="chkMorning">Morning</label></div></td>
+                        <td><div class="mpp_formControlGroup"><input id="chkLunchtime" type="checkbox" name="chkLunchtime" /><label for="chkLunchtime">Lunchtime</label></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="mpp_formControlGroup"><input id="chkAfternoon" type="checkbox" name="chkAfternoon" /><label for="chkAfternoon">Afternoon</label></div></td>
+                        <td><div class="mpp_formControlGroup"><input id="chkEvening" type="checkbox" name="chkEvening" /><label for="chkEvening">Evening</label></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="mpp_formField mpp_bottomButtons">
+                <a id="btnSearch" class="mpp_navLink" href="javascript:__doPostBack(&#39;btnSearch&#39;,&#39;&#39;)">Search</a>
+        </div>
+        
+        <div class="mpp_formField">
+            <span id="lblRecordCount"></span>
+        </div>
+            
+
+
+    <div>
+
+	</div>
+
+            <br />
+
+            <div class="mpp_formField mpp_bottomButtons">
+                
+            </div>
+
+        
+</div> 
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B78ABCE0" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ozBZtywmr/rEPmLqJF1aBi9pRWB6+tlBNnMxwqdHQFU7o7S+h6smP7rJCd5O8uVQWc09+dvCGIpeTr4jV8C1nrgYLojaiFsaXNHbUwfs53+LOv380FyEgjnVMULuh5pl7vxfddOI+icZuInNj/fpePcjUyuVwKAX/k4algssEV6vsVIQZpfzGlXa2JN5WYvvektabA/MTkcxatueFKwo3NgAPUIgbwOR00i0l0ynQkxiXEGR4L6DVY/TEsUH5877W1qxcQo4rV3uqpjUWhvS66PbYHd2M4nCPz1+8tV+B5kp489v3M/tE6KrZtEcJJqBuqUGSgpDWVsQmrt9VKUrVDssshaODySF7v+lzEorY1+EJiC5wbp2YczYDTAsNdoilcQMZ4r8BShY4Kc+m4/fof8nWf3LB2GhSF+o47K/F8nDAEatzdXHHgYklotQFAk0YVH1dbr6GnPNYnjGVirXeww7+cbOEspJwOqlkP9KV9ZwFWcZgInzRZrdpU/WeTiOFRHeaeiQP0JbdPcSradixzrScJqvmIyqoO+SRNTI/ybE5iybfBr+LHIPclYWCe9Em3Yd1+L8RSiSrOxNnjNUAsiWEI3lD3ApEE7sRhqqL++7NpEkdiG1ay2ejKjDbX+xevqND7IcT2dStvEuP6HgQEIaPCG4FLChsnbjdtChMkXhc6rlPLWZPjFhGFnuImTvr+y9J9om63ospOVzf203meprIWXe35kY0P4aezbacfSECCmDugDpu1RxrHhyxgwYBt7sNHFOSe7Dyz/0lCQt0+tXOWm1vKGcpjThNxL8W+JR+w8wF8CAbBDECqiXJelh6Ot25tg9DLp+xtdL06rFeL55vYXlfFIPMBmR3rEeHH1xeH9AKvsND2pez2Lhe0QcOIlWcvKWLXTARkZTstPKznANGttTJPz+dXEt5JSTyKnLKCR0ZZnId9vZR1jKYqGwYi7IlrIm581bwfbxIUEzWE7DDSdaFO2WZ3uW7cnwmS75C+S51dR6U2UiBLNYCqe8aJg1dW6dFcBSAAoKDBjd8I8Q9aPOJZAgRQikUOEGrCzYceban06I1UThMh6xixSEkW14ixzAjt7OWgmVfpgJlJfm4jCQSYUvWgCQlWA44Xq02TI8XlSwZDmskYj4COT1BAtqT21BagR04w4jyZr+Y3SwjvNxM4lQ22BQT5I+axVbsxvJxyBb+qqtzm8lUCPmyG1odnuFRFX4ApUIgSE9+WfHhUP9nXITDrlKLUqNNxz3Tg2184DaK9+Cj/HqmEIoWv0cLcHK/AYGXnsuBkIwrQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":100,"dynamicLayout":true}, null, null, $get("UpdateProgress1"));
+});
+//]]>
+</script>
+</form>
+        </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

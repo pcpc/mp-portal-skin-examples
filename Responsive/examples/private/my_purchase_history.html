@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="/portal/css/MPP_Style_Bundle.min.css?v=9.10.27" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Ministry Platform Portal Responsive Skin</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="navbar.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="./_DomainData/support.ministryplatform.com/skins/Responsive/css/portal.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+	<script type="text/javascript">var $mpp = $.noConflict(true); console.log('MPP Jquery Loaded: ' + $mpp().jquery);</script>
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script type="text/javascript">
+	   var portalPhoneMask = 'xxx-xxx-xxxx';
+	   function loadPortalScripts() {
+	       console.log('Loading Portal Scripts');
+	       var script = document.createElement('script');
+	       script.onload = function() {
+	           console.log('Portal Script Bundle Loaded');
+	           loaded = true;
+	       };
+	       script.src = '/portal/js/MPP_Scripts.min.js?v=9.10.27';
+	       document.getElementsByTagName('head')[0].appendChild(script);
+	   }
+	   loadPortalScripts();
+	   var DEBUG = true;
+	</script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./">Responsive</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Public <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online_giving.aspx">Online Giving</a></li>
+                                <li><a href="mission_trip_giving.aspx">Mission Trip Giving</a></li>
+                                <li><a href="mission_trip_registration.aspx">Mission Trip Registration</a></li>
+                                <li><a href="make_a_pledge.aspx">Make A Pledge</a></li>
+                                <li><a href="event_calendar.aspx">Event Calendar</a></li>
+                                <li><a href="group_finder.aspx">Group Finder</a></li>
+                                <li><a href="opportunity_finder.aspx">Opportunity Finder</a></li>
+                                <li><a href="group_survey.aspx">Find A Group By Survey</a></li>
+                                <li><a href="opportunity_survey.aspx">Find An Opportunity By Survey</a></li>
+                                <li><a href="get_form.aspx?id=01fb904a-0aa6-4eaa-bde4-f88e3f8d888e">Submit a Prayer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="my_user_account.aspx">My User Account</a></li>
+                                <li><a href="my_groups.aspx">My Groups</a></li>
+                                <li><a href="groupleaderresources">Group Leader Resources</a></li>
+                                <li><a href="my_events.aspx">My Events</a></li>
+                                <li><a href="my_mission_trips.aspx">My Mission Trips</a></li>
+                                <li><a href="missiontripdetails">Mission Trip Forms &amp; Info</a></li>
+                                <li><a href="my_purchase_history.aspx">My Purchase History</a></li>
+                                <li><a href="my_giving.aspx">My Giving</a></li>
+                                <li><a href="my_contribution_statement.aspx">My Contribution Statement</a></li>
+                                <li><a href="my_directory.aspx">Online Directory</a></li>
+                                <li><a href="my_pledges.aspx">My Pledges</a></li>
+                                <li><a href="my_calls.aspx">My Calls</a></li>
+                                <li><a href="my_subscriptions.aspx">My Subscriptions</a></li>
+                                <li><a href="my_profile.aspx">My Survey</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a id="userLink" href="/portal/my_user_account.aspx">Test, Bmz</a></li>
+                        <li><a id="logoutLink" href="login.aspx?logout=true">Logout</a></li>
+                        <li><a id="cartLink" href="transaction_summary.aspx">Show Summary (0)</a></li>
+
+                        <!--
+                            <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                            <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                        -->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div>
+            <form name="form1" method="post" action="/portal/my_purchase_history.aspx" id="form1" class="mpp_page_MyPurchaseHistory">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="clmmm1p+aF9T8AVtVecjiESVpIYf7MEVRpQAII4WrFw2qVMtFc2N25lWjicxBlgucWLjVdw8jDlmaqtj++yh207PmaMs8Bn9GP7XaByppG7t1c99/XRsoDkRXjy/Xf41dk5jJLrnWCfoEUacvi6uEPnBIWOEHVy1CivdTuRKY/ca/bYKZtvK6dA3iX4ybJXjR4fOcG87vKUtQ7qmxK3MspN71drgqipJ5sErkcYPFROKh2t2T6o2J1kjpngNqFvUn/yrFdhXvrlpz3LSvFdV3oC6TJACbg7kYopyF3ZE0O6QDUsom8hxVLhmpFMFAlPjVEEJZBSKOC+6RTxpgLXWJdq10AP+OTIHgBLnMJjJe4eCfm+gzOhZxgZMUeacvUF0JlXGephZLFK3AAiVEy1PGyZIqQZaq93K9bQANtvLdcx7Oa/1h0xmIJVaRFMxO5GvIdtZf2CHe0vZ20u/F2+UG4541FS4775xt0U0fMID9P8a8oVLhjoImNiwRVIo/9zGsV6DcKMuLWu8VoAgpVyc0PodvRy341qvdAa6VbMDxAFJ2SnM7/B0XrfHlZV/zi97a8fzUY2r1N2EbNFOxWrdH9924jBdsocpbtNrEVPj4owEwLkwAU2TDv/WN2HU9L28HxIvMXaeyWJbugXqzPhKGPE5lI1B+vhuqVVrtn8rGhh09ISU2qYzyPk97JOFkbhVBqVnhU9HlV5O4Nt5vXEIhRV/+QnYpcxtGIkFPXBjJQ88S7Mz3+gI+LZkPAR8N+fp/Ha4Zj1ow+VQDyEWnWvzww==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+        <input type="hidden" name="hdnInvoiceDetailIDs" id="hdnInvoiceDetailIDs" />
+        <input type="hidden" name="hdnEventTitle" id="hdnEventTitle" />
+        <input type="hidden" name="hdnInvoiceCurrency" id="hdnInvoiceCurrency" />
+    <div>
+    <div id="pnlHistory">
+	
+
+    <h1 class="mpp_formTitle">My Purchase History</h1>
+
+    <div class="mpp_formField mpp_bottomButtons">
+        <a id="btnPrevMonth" class="mpp_navLink" href="javascript:__doPostBack(&#39;btnPrevMonth&#39;,&#39;&#39;)">< Prev</a> 
+        <select name="ddlPurchaseMonth" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlPurchaseMonth\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlPurchaseMonth" class="DropDownSmall">
+		<option selected="selected" value="0">All</option>
+		<option value="1">Jan</option>
+		<option value="2">Feb</option>
+		<option value="3">Mar</option>
+		<option value="4">Apr</option>
+		<option value="5">May</option>
+		<option value="6">Jun</option>
+		<option value="7">Jul</option>
+		<option value="8">Aug</option>
+		<option value="9">Sep</option>
+		<option value="10">Oct</option>
+		<option value="11">Nov</option>
+		<option value="12">Dec</option>
+
+	</select> 
+        <select name="ddlPurchaseYear" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlPurchaseYear\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlPurchaseYear" class="DropDownSmall">
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option selected="selected" value="2019">2019</option>
+
+	</select> 
+        <a id="btnNextMonth" class="mpp_navLink" href="javascript:__doPostBack(&#39;btnNextMonth&#39;,&#39;&#39;)">Next ></a>            
+
+    </div>
+    <div class="mpp_formField">
+        <div>
+
+	</div>
+    </div>
+    
+</div>
+
+    
+
+
+    </div>
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B581E899" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="xg5o7sFyE1HyNnLOCY0cGK1ugXwFopLztnNrA41sbFiFaN+NGdLqXRG6oFuB1R0KZANBIUT7/DSY6zNYUgfWzP2pd+dJ/Of+DloncvTvNwWkZ1j5GEMtYKTyc0xpT94cmQ9PPi8c9P+EF7SoXAHAFV79rdkObcwjaBKvHzrii/Gu6b72GY2DqWGvTq5dh6rdjaQxBFBkr1T2QQmR5/D3z+ml8K4gflnX9yzYpLLlUhI/FkMbNzUX7Jr0/QIdEndFmGiMrncVUgjenPK3rAWwmWqGF3NdUk4Q5cbfdsaLLXBAarseAt4EMmx1LNWRuwN33ovs4X8PyUB8eRY5MMjSK+P+fPOahsToJqWFrQNhcRGWLuyqdcoLL7K55WbXhxnKtgmhoTLO0I7PmeCqDyvgtGPazY+fnE+UAx/N+Y/iA+3pp4sB2l76BPvnCRFX5QkoQp4PanAGl52USEe2EqIECDbhv65bGTzSdWVb/GOqWQdDPn5WENgzZklKDR3cl+Id/1A0+SEGlGya4wdvUr/maYC+a5k8K0i7zeFuRCsGNn3K3Ppk2wyNLtwJ5TKbuwZzTQNFJj/rqKEM1io8GPyI615lM8aMFoaRpOPUij0sajA8odNX30kaoxZlVdxPo8jaDXoT8M+9e7Fn5Lz9cyLsGDtSCHi+0Pt4TLa0OBLDWQQ=" />
+</div></form>
+        </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

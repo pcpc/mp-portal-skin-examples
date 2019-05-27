@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="/portal/css/MPP_Style_Bundle.min.css?v=9.10.27" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Ministry Platform Portal Responsive Skin</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="navbar.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="./_DomainData/support.ministryplatform.com/skins/Responsive/css/portal.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+	<script type="text/javascript">var $mpp = $.noConflict(true); console.log('MPP Jquery Loaded: ' + $mpp().jquery);</script>
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script type="text/javascript">
+	   var portalPhoneMask = 'xxx-xxx-xxxx';
+	   function loadPortalScripts() {
+	       console.log('Loading Portal Scripts');
+	       var script = document.createElement('script');
+	       script.onload = function() {
+	           console.log('Portal Script Bundle Loaded');
+	           loaded = true;
+	       };
+	       script.src = '/portal/js/MPP_Scripts.min.js?v=9.10.27';
+	       document.getElementsByTagName('head')[0].appendChild(script);
+	   }
+	   loadPortalScripts();
+	   var DEBUG = true;
+	</script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./">Responsive</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Public <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online_giving.aspx">Online Giving</a></li>
+                                <li><a href="mission_trip_giving.aspx">Mission Trip Giving</a></li>
+                                <li><a href="mission_trip_registration.aspx">Mission Trip Registration</a></li>
+                                <li><a href="make_a_pledge.aspx">Make A Pledge</a></li>
+                                <li><a href="event_calendar.aspx">Event Calendar</a></li>
+                                <li><a href="group_finder.aspx">Group Finder</a></li>
+                                <li><a href="opportunity_finder.aspx">Opportunity Finder</a></li>
+                                <li><a href="group_survey.aspx">Find A Group By Survey</a></li>
+                                <li><a href="opportunity_survey.aspx">Find An Opportunity By Survey</a></li>
+                                <li><a href="get_form.aspx?id=01fb904a-0aa6-4eaa-bde4-f88e3f8d888e">Submit a Prayer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="my_user_account.aspx">My User Account</a></li>
+                                <li><a href="my_groups.aspx">My Groups</a></li>
+                                <li><a href="groupleaderresources">Group Leader Resources</a></li>
+                                <li><a href="my_events.aspx">My Events</a></li>
+                                <li><a href="my_mission_trips.aspx">My Mission Trips</a></li>
+                                <li><a href="missiontripdetails">Mission Trip Forms &amp; Info</a></li>
+                                <li><a href="my_purchase_history.aspx">My Purchase History</a></li>
+                                <li><a href="my_giving.aspx">My Giving</a></li>
+                                <li><a href="my_contribution_statement.aspx">My Contribution Statement</a></li>
+                                <li><a href="my_directory.aspx">Online Directory</a></li>
+                                <li><a href="my_pledges.aspx">My Pledges</a></li>
+                                <li><a href="my_calls.aspx">My Calls</a></li>
+                                <li><a href="my_subscriptions.aspx">My Subscriptions</a></li>
+                                <li><a href="my_profile.aspx">My Survey</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a id="userLink" href="/portal/my_user_account.aspx">Test, Bmz</a></li>
+                        <li><a id="logoutLink" href="login.aspx?logout=true">Logout</a></li>
+                        <li><a id="cartLink" href="transaction_summary.aspx">Show Summary (0)</a></li>
+
+                        <!--
+                            <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                            <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                        -->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div>
+            <form name="form1" method="post" action="/portal/get_form.aspx?id=01fb904a-0aa6-4eaa-bde4-f88e3f8d888e" id="form1" class="mpp_page_GetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDMyOTkyMzIwD2QWAgIDDxYCHgZhY3Rpb24FPS9wb3J0YWwvZ2V0X2Zvcm0uYXNweD9pZD0wMWZiOTA0YS0wYWE2LTRlYWEtYmRlNC1mODhlM2Y4ZDg4OGUWBgIFDxYCHgRUZXh0BRdTdWJtaXQgYSBQcmF5ZXIgUmVxdWVzdGQCBw8WAh8BBVQ8cD5JdCdzIGVudGlyZWx5IHVwIHRvIHlvdSB3aGV0aGVyIHRvIG1ha2UgdGhpcyByZXF1ZXN0IGFub25teW91cyBvciBjaHVyY2h3aWRlITwvcD5kAg0PFgIfAQWbATxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij52YXIgcmVxdWlyZWRGaWVsZElEcyA9ICI3NCwxMjQiOyB2YXIgcmVxdWlyZWRSYWRpb0lEcyA9ICIiOyB2YXIgdmFsaWRhdGVDb250YWN0ID0gdHJ1ZTsgdmFyIHZhbGlkYXRlQWRkcmVzcyA9IHRydWU7PC9zY3JpcHQ+ZGSW0zjZWdxskiFuKMjUiSzXYkN2bk7zp1VYTtfsKfbqSw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+    <div>
+    <input type="hidden" name="hdnFormID" id="hdnFormID" value="15" />
+    <input type="hidden" name="hdnFormGUID" id="hdnFormGUID" value="01fb904a-0aa6-4eaa-bde4-f88e3f8d888e" />
+
+    <h1 class="mpp_formTitle">Submit a Prayer Request</h1>
+    <h2 class="mpp_formSubTitle"><p>It's entirely up to you whether to make this request anonmyous or churchwide!</p></h2>
+    
+    <div id="mpp_custom_form"><div class="mpp_formField"><label for="contact_First_Name"><span class="mpp_custom_form_required">*</span>First Name</label><div class="mpp_custom_form_control"><input type="text" maxlength="25" id="contact_First_Name" required minlength="2" name="contact_First_Name"  value="Bmz" /></div></div><div class="mpp_formField"><label for="contact_Last_Name"><span class="mpp_custom_form_required">*</span>Last Name</label><div class="mpp_custom_form_control"><input type="text" maxlength="25" id="contact_Last_Name" required minlength="2" name="contact_Last_Name"  value="Test" /></div></div><div class="mpp_formField"><label for="contact_Email"><span class="mpp_custom_form_required">*</span>Email Address</label><div class="mpp_custom_form_control"><input type="text" maxlength="200" id="contact_Email" validateEmail="true" required name="contact_Email"  value="bmz@pcpc.org" /></div></div><div class="mpp_formField"><label for="contact_Phone"><span class="mpp_custom_form_required">*</span>Phone Number</label><div class="mpp_custom_form_control"><input type="text" phoneControl="true" maxlength="25" required id="contact_Phone" name="contact_Phone"  value="214-224-2500" /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label"><span class="mpp_custom_form_required">*</span>Address Line 1</div><div class="mpp_custom_form_control"><input type="text" maxlength="75" id="address_Line_1" name="address_Line_1"  value="" required /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label">Address Line 2</div><div class="mpp_custom_form_control"><input type="text" maxlength="75" id="address_Line_2" name="address_Line_2"  value="" /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label"><span class="mpp_custom_form_required">*</span>City</div><div class="mpp_custom_form_control"><input type="text" maxlength="50" id="address_City" name="address_City"  value="" required /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label"><span class="mpp_custom_form_required">*</span>State/Province/Region</div><div class="mpp_custom_form_control"><input type="text" maxlength="50" id="address_State" name="address_State"  value="" required /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label"><span class="mpp_custom_form_required">*</span>Zip/Postal Code</div><div class="mpp_custom_form_control"><input type="text" maxlength="15" id="address_Postal_Code" name="address_Postal_Code"  value="" required /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label mpp_full_width  mpp_alternate_label "><span class="mpp_custom_form_required">*</span>Please give us as much<b><u> detail </u></b>as possible when submitting this prayer <i>request</i>.</div><div class="mpp_custom_form_control"><textarea id="field_74" name="field_74"  required ></textarea></div></div><div class="mpp_custom_form_field mpp_custom_form_field_checkbox"><div class="mpp_custom_form_control"><label><input type="checkbox" id="field_75" name="field_75" value="Yes" />Staff only</label></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label mpp_full_width  mpp_instructions ">Instruction that are normal.  These are normal instructions:</div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label">Name (Optional):</div><div class="mpp_custom_form_control"><input type="text" id="field_76" name="field_76" value="" /></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label mpp_full_width  mpp_alternate_label  mpp_instructions ">Instructions with <b><i><u>Alternate HTML Text</u></i></b> and sweet stuff!</div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label mpp_full_width  mpp_alternate_label  mpp_instructions ">Want to see our Prayer Request FAQ (Frequently Asked Questions?)<div><br /></div><div><a href="http://www.google.com" target="_blank">Click Here</a></div></div></div><div class="mpp_custom_form_field"><div class="mpp_custom_form_label"><span class="mpp_custom_form_required">*</span>Is this your very first time submitting this specific request?:</div><div class="mpp_custom_form_control"><select id="field_124" name="field_124"  required ><option value="" selected />-- Select --</option><option value="Definitely" />Definitely</option><option value="Nah" />Nah</option></select></div></div></div>
+
+    
+    <div class="mpp_clearfix"></div>
+
+    <div id="mpp_formErrors" class="mpp_alert error" style="display: none;">
+        
+    </div>
+
+    <div class="mpp_formField mpp_bottomButtons">
+        <a onclick="return jqvalidateRegistration(&#39;#form1&#39;);" id="btnSubmitForm" class="mpp_navLink" href="javascript:__doPostBack(&#39;btnSubmitForm&#39;,&#39;&#39;)">Submit Form</a>
+    </div>
+
+
+    <br />
+    <script type="text/javascript">var requiredFieldIDs = "74,124"; var requiredRadioIDs = ""; var validateContact = true; var validateAddress = true;</script>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function setupPageEvents() {
+            validateForm('#form1', '#mpp_formErrors');
+        };
+    </script>
+
+
+
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="57E9A3B7" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATq65bIT5HqVka9xexeI+jlMNFEjuB1azc6mc4yeqfAwrD3UAnOK2v3bQKFW+dytEWxn80jPbks5C1EMzj+s1SLffIpE6jP15JSvFX+jCaGXJTCCcYhywBN+5qYSjAp0rM=" />
+</div></form>
+        </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

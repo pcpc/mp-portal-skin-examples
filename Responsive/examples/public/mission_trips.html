@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="/portal/css/MPP_Style_Bundle.min.css?v=9.10.27" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Ministry Platform Portal Responsive Skin</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="navbar.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="./_DomainData/support.ministryplatform.com/skins/Responsive/css/portal.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+	<script type="text/javascript">var $mpp = $.noConflict(true); console.log('MPP Jquery Loaded: ' + $mpp().jquery);</script>
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script type="text/javascript">
+	   var portalPhoneMask = 'xxx-xxx-xxxx';
+	   function loadPortalScripts() {
+	       console.log('Loading Portal Scripts');
+	       var script = document.createElement('script');
+	       script.onload = function() {
+	           console.log('Portal Script Bundle Loaded');
+	           loaded = true;
+	       };
+	       script.src = '/portal/js/MPP_Scripts.min.js?v=9.10.27';
+	       document.getElementsByTagName('head')[0].appendChild(script);
+	   }
+	   loadPortalScripts();
+	   var DEBUG = true;
+	</script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./">Responsive</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Public <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online_giving.aspx">Online Giving</a></li>
+                                <li><a href="mission_trip_giving.aspx">Mission Trip Giving</a></li>
+                                <li><a href="mission_trip_registration.aspx">Mission Trip Registration</a></li>
+                                <li><a href="make_a_pledge.aspx">Make A Pledge</a></li>
+                                <li><a href="event_calendar.aspx">Event Calendar</a></li>
+                                <li><a href="group_finder.aspx">Group Finder</a></li>
+                                <li><a href="opportunity_finder.aspx">Opportunity Finder</a></li>
+                                <li><a href="group_survey.aspx">Find A Group By Survey</a></li>
+                                <li><a href="opportunity_survey.aspx">Find An Opportunity By Survey</a></li>
+                                <li><a href="get_form.aspx?id=01fb904a-0aa6-4eaa-bde4-f88e3f8d888e">Submit a Prayer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="my_user_account.aspx">My User Account</a></li>
+                                <li><a href="my_groups.aspx">My Groups</a></li>
+                                <li><a href="groupleaderresources">Group Leader Resources</a></li>
+                                <li><a href="my_events.aspx">My Events</a></li>
+                                <li><a href="my_mission_trips.aspx">My Mission Trips</a></li>
+                                <li><a href="missiontripdetails">Mission Trip Forms &amp; Info</a></li>
+                                <li><a href="my_purchase_history.aspx">My Purchase History</a></li>
+                                <li><a href="my_giving.aspx">My Giving</a></li>
+                                <li><a href="my_contribution_statement.aspx">My Contribution Statement</a></li>
+                                <li><a href="my_directory.aspx">Online Directory</a></li>
+                                <li><a href="my_pledges.aspx">My Pledges</a></li>
+                                <li><a href="my_calls.aspx">My Calls</a></li>
+                                <li><a href="my_subscriptions.aspx">My Subscriptions</a></li>
+                                <li><a href="my_profile.aspx">My Survey</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a id="userLink" href="/portal/my_user_account.aspx">Test, Bmz</a></li>
+                        <li><a id="logoutLink" href="login.aspx?logout=true">Logout</a></li>
+                        <li><a id="cartLink" href="transaction_summary.aspx">Show Summary (0)</a></li>
+
+                        <!--
+                            <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                            <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                        -->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div>
+            <form name="form1" method="post" action="/portal/mission_trips.aspx" id="form1" class="mpp_page_MissionTrips">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyODQ3OTU2NzUPZBYCAgMPFgIeBmFjdGlvbgUaL3BvcnRhbC9taXNzaW9uX3RyaXBzLmFzcHgWAgIDD2QWAgIFDzwrABEDAA8WBB4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAIBZAEQFgAWABYADBQrAAAWAmYPZBYGZg9kFgICAg8PFgIeBFRleHQFCVRyaXAgQ29zdGRkAgEPZBYIZg9kFgICAQ8WAh8DBUo8YSBocmVmPSJtaXNzaW9uX3RyaXBfcmVnaXN0cmF0aW9uLmFzcHg/bWlzc2lvblRyaXBJRD0yNyI+TWFycyBNaXNzaW9uPC9hPmQCAQ9kFgICAQ8WAh8DBRM2LzMvMjAyNSAtIDcvNi8yMDI1ZAICD2QWAgIBDxYCHwMFCSQ1LDAwMC4wMGQCAw9kFgICAQ8WAh8DBQRPcGVuZAICDw8WAh4HVmlzaWJsZWhkZBgBBRVHcmlkVmlld19NaXNzaW9uVHJpcHMPPCsADAEIAgFk+XFc+BtSBDgwpgilDaRB0bXXBXZoudzpFbIwb/iuqQ0=" />
+</div>
+
+    <div>
+        <h1 class="mpp_formTitle">Mission Trips</h1>
+
+        
+
+        <div id="Panel_Select_Trip">
+	
+
+            <div class="mpp_formField">
+                <label for="TextBox_Search">Search:</label> 
+                <div class="mpp_formControl">
+                    <input name="TextBox_Search" type="text" id="TextBox_Search" />
+                    <input type="submit" name="Button_Filter" value="Filter" id="Button_Filter" class="mpp_navLink" />
+                </div>
+            </div>
+
+                <div>
+		<table class="mpp_Grid" cellspacing="0" rules="all" border="1" id="GridView_MissionTrips" style="width:100%;border-collapse:collapse;">
+			<tr class="mpp_gridHeader">
+				<th class="name" scope="col">Mission Trip</th><th class="dates" scope="col">Trip Dates</th><th class="deposit" scope="col">Trip Cost</th><th class="status" scope="col">Registration Status</th>
+			</tr><tr class="mpp_gridRow">
+				<td class="name">
+                                <a href="mission_trip_registration.aspx?missionTripID=27">Mars Mission</a>
+                            </td><td class="dates">
+                                6/3/2025 - 7/6/2025
+                            </td><td class="deposit">
+                                $5,000.00
+                            </td><td class="status">
+                                Open
+                            </td>
+			</tr>
+		</table>
+	</div>
+
+
+
+            
+        
+</div>
+
+    </div>
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="116C532F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAANqg/+KXCMU4PGwzYqpMeORZ5rn5uSrYLZZLMC5W6mBLbCj28xKEpCPdDY3RaR2NZluS77LmbHfWkCp3IiKXNZNLTALFAVgaWySRWKtK0NAWw==" />
+</div></form>
+        </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

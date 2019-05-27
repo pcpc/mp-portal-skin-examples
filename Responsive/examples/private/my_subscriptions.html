@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="/portal/css/MPP_Style_Bundle.min.css?v=9.10.27" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Ministry Platform Portal Responsive Skin</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="navbar.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="./_DomainData/support.ministryplatform.com/skins/Responsive/css/portal.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+	<script type="text/javascript">var $mpp = $.noConflict(true); console.log('MPP Jquery Loaded: ' + $mpp().jquery);</script>
+	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script type="text/javascript">
+	   var portalPhoneMask = 'xxx-xxx-xxxx';
+	   function loadPortalScripts() {
+	       console.log('Loading Portal Scripts');
+	       var script = document.createElement('script');
+	       script.onload = function() {
+	           console.log('Portal Script Bundle Loaded');
+	           loaded = true;
+	       };
+	       script.src = '/portal/js/MPP_Scripts.min.js?v=9.10.27';
+	       document.getElementsByTagName('head')[0].appendChild(script);
+	   }
+	   loadPortalScripts();
+	   var DEBUG = true;
+	</script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./">Responsive</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Public <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="online_giving.aspx">Online Giving</a></li>
+                                <li><a href="mission_trip_giving.aspx">Mission Trip Giving</a></li>
+                                <li><a href="mission_trip_registration.aspx">Mission Trip Registration</a></li>
+                                <li><a href="make_a_pledge.aspx">Make A Pledge</a></li>
+                                <li><a href="event_calendar.aspx">Event Calendar</a></li>
+                                <li><a href="group_finder.aspx">Group Finder</a></li>
+                                <li><a href="opportunity_finder.aspx">Opportunity Finder</a></li>
+                                <li><a href="group_survey.aspx">Find A Group By Survey</a></li>
+                                <li><a href="opportunity_survey.aspx">Find An Opportunity By Survey</a></li>
+                                <li><a href="get_form.aspx?id=01fb904a-0aa6-4eaa-bde4-f88e3f8d888e">Submit a Prayer</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Private <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="my_user_account.aspx">My User Account</a></li>
+                                <li><a href="my_groups.aspx">My Groups</a></li>
+                                <li><a href="groupleaderresources">Group Leader Resources</a></li>
+                                <li><a href="my_events.aspx">My Events</a></li>
+                                <li><a href="my_mission_trips.aspx">My Mission Trips</a></li>
+                                <li><a href="missiontripdetails">Mission Trip Forms &amp; Info</a></li>
+                                <li><a href="my_purchase_history.aspx">My Purchase History</a></li>
+                                <li><a href="my_giving.aspx">My Giving</a></li>
+                                <li><a href="my_contribution_statement.aspx">My Contribution Statement</a></li>
+                                <li><a href="my_directory.aspx">Online Directory</a></li>
+                                <li><a href="my_pledges.aspx">My Pledges</a></li>
+                                <li><a href="my_calls.aspx">My Calls</a></li>
+                                <li><a href="my_subscriptions.aspx">My Subscriptions</a></li>
+                                <li><a href="my_profile.aspx">My Survey</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a id="userLink" href="/portal/my_user_account.aspx">Test, Bmz</a></li>
+                        <li><a id="logoutLink" href="login.aspx?logout=true">Logout</a></li>
+                        <li><a id="cartLink" href="transaction_summary.aspx">Show Summary (0)</a></li>
+
+                        <!--
+                            <li><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                            <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                        -->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div>
+            <form name="mpp_page_MySubscriptions" method="post" action="/portal/my_subscriptions.aspx" id="mpp_page_MySubscriptions" class="mpp_page_MySubscriptions">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU3OTgxNzY4Ng9kFgICAw8WAh4GYWN0aW9uBR0vcG9ydGFsL215X3N1YnNjcmlwdGlvbnMuYXNweBYCAgUPZBYCZg9kFgQCAQ8WAh4HVmlzaWJsZWgWAgIBDxYCHgRUZXh0ZWQCAw8WAh8CBcclPHRhYmxlIGNsYXNzPSJmb3JtVGFibGUiIGlkPSJtcHBfR3JpZFN1YnNjcmlwdGlvbnMiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiIGNsYXNzPSJtcHBfR3JpZCI+PHRyIGNsYXNzPSJtcHBfZ3JpZEhlYWRlciI+PHRoIGNsYXNzPSJwdWJsaWNhdGlvbiI+UHVibGljYXRpb248L3RoPjx0aCBjbGFzcz0iZGVzY3JpcHRpb24iPkRlc2NyaXB0aW9uPC90aD48dGggY2xhc3M9InN1YnNjcmliZWQiPlN1YnNjcmliZWQ8L3RoPjwvdHI+PHRyIGNsYXNzPSJtcHBfZ3JpZFJvd0FsdGVybmF0ZSI+PHRkIGNsYXNzPSJwdWJsaWNhdGlvbiI+QmlnIFB1YmxpY2F0aW9uITwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+PC90ZD48dGQgY2xhc3M9InN1YnNjcmliZWQiIGFsaWduPSJjZW50ZXIiPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgaWQ9InBfMTQiIG5hbWU9InBfMTQiLz48L3RkPjwvdHI+PHRyIGNsYXNzPSJtcHBfZ3JpZFJvdyI+PHRkIGNsYXNzPSJwdWJsaWNhdGlvbiI+QmlnIFB1YmxpY2F0aW9uITE8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzQyIiBuYW1lPSJwXzQyIi8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPkxpc3RfMTwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+Tm8gc3VicyBoZXJlIC0gc3luY2luZyB3aXRoIG1haWxjaGltcDwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzE5IiBuYW1lPSJwXzE5Ii8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3ciPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPk1lZ2FuJ3MgTWlnaHR5IExpc3Q8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzYxIiBuYW1lPSJwXzYxIi8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPk5ld3MgZm9yIE1lbjwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+U3RheSBjdXJyZW50IG9uIGhhcHBlbmluZ3MgaW4gdGhlIE1lbidzIE1pbmlzdHJ5ITwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzEiIG5hbWU9InBfMSIvPjwvdGQ+PC90cj48dHIgY2xhc3M9Im1wcF9ncmlkUm93Ij48dGQgY2xhc3M9InB1YmxpY2F0aW9uIj5OZXdzIGZvciBNZW4gMjwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+U3RheSBjdXJyZW50IG9uIGhhcHBlbmluZ3MgaW4gdGhlIE1lbidzIE1pbmlzdHJ5ITwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzMyIiBuYW1lPSJwXzMyIi8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPk5ld3MgZm9yIFdvbWVuPC90ZD48dGQgY2xhc3M9ImRlc2NyaXB0aW9uIj5TdGF5IGN1cnJlbnQgb24gaGFwcGVuaW5ncyBpbiB0aGUgV29tZW4ncyBNaW5pc3RyeSE8L3RkPjx0ZCBjbGFzcz0ic3Vic2NyaWJlZCIgYWxpZ249ImNlbnRlciI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBpZD0icF8zNCIgbmFtZT0icF8zNCIvPjwvdGQ+PC90cj48dHIgY2xhc3M9Im1wcF9ncmlkUm93Ij48dGQgY2xhc3M9InB1YmxpY2F0aW9uIj5OZXdzIGZvciBXb21lbjwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+U3RheSBjdXJyZW50IG9uIGhhcHBlbmluZ3MgaW4gdGhlIFdvbWVuJ3MgTWluaXN0cnkhPC90ZD48dGQgY2xhc3M9InN1YnNjcmliZWQiIGFsaWduPSJjZW50ZXIiPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgaWQ9InBfMyIgbmFtZT0icF8zIi8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPk5ld3NsZXR0ZXIgLSBXZWVrbHk8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzIiIG5hbWU9InBfMiIvPjwvdGQ+PC90cj48dHIgY2xhc3M9Im1wcF9ncmlkUm93Ij48dGQgY2xhc3M9InB1YmxpY2F0aW9uIj5OZXdzbGV0dGVyIC0gV2Vla2x5IDI8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzMzIiBuYW1lPSJwXzMzIi8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPk5ld3NsZXR0ZXIgVGVzdDwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+PC90ZD48dGQgY2xhc3M9InN1YnNjcmliZWQiIGFsaWduPSJjZW50ZXIiPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgaWQ9InBfNTgiIG5hbWU9InBfNTgiLz48L3RkPjwvdHI+PHRyIGNsYXNzPSJtcHBfZ3JpZFJvdyI+PHRkIGNsYXNzPSJwdWJsaWNhdGlvbiI+UGFyZW50cyBvZiAwIHRvIDI0bW88L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzM3IiBuYW1lPSJwXzM3Ii8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPlBhcmVudHMgb2YgMCB0byAyNG1vPC90ZD48dGQgY2xhc3M9ImRlc2NyaXB0aW9uIj48L3RkPjx0ZCBjbGFzcz0ic3Vic2NyaWJlZCIgYWxpZ249ImNlbnRlciI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBpZD0icF84IiBuYW1lPSJwXzgiLz48L3RkPjwvdHI+PHRyIGNsYXNzPSJtcHBfZ3JpZFJvdyI+PHRkIGNsYXNzPSJwdWJsaWNhdGlvbiI+UGFyZW50cyBvZiAxMCB0byAxMnlycyBvbGQ8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzEyIiBuYW1lPSJwXzEyIi8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3dBbHRlcm5hdGUiPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPlBhcmVudHMgb2YgMTAgdG8gMTJ5cnMgb2xkPC90ZD48dGQgY2xhc3M9ImRlc2NyaXB0aW9uIj48L3RkPjx0ZCBjbGFzcz0ic3Vic2NyaWJlZCIgYWxpZ249ImNlbnRlciI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBpZD0icF80MCIgbmFtZT0icF80MCIvPjwvdGQ+PC90cj48dHIgY2xhc3M9Im1wcF9ncmlkUm93Ij48dGQgY2xhc3M9InB1YmxpY2F0aW9uIj5QYXJlbnRzIG9mIDIgdG8gNTwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+PC90ZD48dGQgY2xhc3M9InN1YnNjcmliZWQiIGFsaWduPSJjZW50ZXIiPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgaWQ9InBfMTAiIG5hbWU9InBfMTAiLz48L3RkPjwvdHI+PHRyIGNsYXNzPSJtcHBfZ3JpZFJvd0FsdGVybmF0ZSI+PHRkIGNsYXNzPSJwdWJsaWNhdGlvbiI+UGFyZW50cyBvZiAyIHRvIDU8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPjwvdGQ+PHRkIGNsYXNzPSJzdWJzY3JpYmVkIiBhbGlnbj0iY2VudGVyIj48aW5wdXQgdHlwZT0iY2hlY2tib3giIGlkPSJwXzM4IiBuYW1lPSJwXzM4Ii8+PC90ZD48L3RyPjx0ciBjbGFzcz0ibXBwX2dyaWRSb3ciPjx0ZCBjbGFzcz0icHVibGljYXRpb24iPlBhcmVudHMgb2YgNiB0byA5eXJzIG9sZDwvdGQ+PHRkIGNsYXNzPSJkZXNjcmlwdGlvbiI+PC90ZD48dGQgY2xhc3M9InN1YnNjcmliZWQiIGFsaWduPSJjZW50ZXIiPjxpbnB1dCB0eXBlPSJjaGVja2JveCIgaWQ9InBfMzkiIG5hbWU9InBfMzkiLz48L3RkPjwvdHI+PHRyIGNsYXNzPSJtcHBfZ3JpZFJvd0FsdGVybmF0ZSI+PHRkIGNsYXNzPSJwdWJsaWNhdGlvbiI+UGFyZW50cyBvZiA2IHRvIDl5cnMgb2xkPC90ZD48dGQgY2xhc3M9ImRlc2NyaXB0aW9uIj48L3RkPjx0ZCBjbGFzcz0ic3Vic2NyaWJlZCIgYWxpZ249ImNlbnRlciI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBpZD0icF8xMSIgbmFtZT0icF8xMSIvPjwvdGQ+PC90cj48dHIgY2xhc3M9Im1wcF9ncmlkUm93Ij48dGQgY2xhc3M9InB1YmxpY2F0aW9uIj5RQSBQdWJsaWNhdGlvbnM8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPlVzZSB0byB0ZXN0IHBvcnRhbCBwdWJsaWNhdGlvbiBzdWJzY3JpYmluZyBhbmQgTWFpbGNoaW1wIGxpc3Qgc3luYydpbmc8L3RkPjx0ZCBjbGFzcz0ic3Vic2NyaWJlZCIgYWxpZ249ImNlbnRlciI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBpZD0icF8xMyIgbmFtZT0icF8xMyIvPjwvdGQ+PC90cj48dHIgY2xhc3M9Im1wcF9ncmlkUm93QWx0ZXJuYXRlIj48dGQgY2xhc3M9InB1YmxpY2F0aW9uIj5RQSBQdWJsaWNhdGlvbnM8L3RkPjx0ZCBjbGFzcz0iZGVzY3JpcHRpb24iPlVzZSB0byB0ZXN0IHBvcnRhbCBwdWJsaWNhdGlvbiBzdWJzY3JpYmluZyBhbmQgTWFpbGNoaW1wIGxpc3Qgc3luYydpbmc8L3RkPjx0ZCBjbGFzcz0ic3Vic2NyaWJlZCIgYWxpZ249ImNlbnRlciI+PGlucHV0IHR5cGU9ImNoZWNrYm94IiBpZD0icF80MSIgbmFtZT0icF80MSIvPjwvdGQ+PC90cj48L3RhYmxlPmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCWNoa09wdE91dDl7chztiJdGy+DGqANL/WU17bSSf69Q+pKHXuko3OVR" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mpp_page_MySubscriptions'];
+if (!theForm) {
+    theForm = document.mpp_page_MySubscriptions;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/portal/WebResource.axd?d=6SO8LGg-8nq3N41eTdFXHLNL3YVVHWclhDb4x_yLon8gkVfByxbEn1tPa1_fPJaiq4ann4C_wQtl-CJCRJ0A-eYF7dmB2k3lSegCC74RQ4Q1&amp;t=636765320300000000" type="text/javascript"></script>
+
+
+<script src="/portal/ScriptResource.axd?d=80pm4dNdat6G7eFwOso0Fylv04_ITNTcp8L_y9uS8BhHGnT-CaPtqERUYnLel4c42yUmurzrOtPyIdxvXTSk5DdfCsdL-mqNElx5OyarUQyYpLI1SsiHMOBH0pOCo9lVnJpfzz9IdDyqPwmY6CTjKtWsTNN2ef332R00zq_Ae9c1&amp;t=ffffffff999c3159" type="text/javascript"></script>
+<script src="/portal/ScriptResource.axd?d=7Cgfh1iG_4vCph2-OBqRj6-rIvFJEstbnOan7zVwI4-DYjDPs9J6kums9BdxEzDrswohvm8ZFOgCRA7bLQVqxW_84cuzRSPDg8Nw_VlCVme6FROnOP4nWiA4Jf3o45XNMCdMTSWGggNQQa05tFqCqjzT3tCw6sbY1K18FvljYI2_JlJS7YsJfxSFnuQ5OLsX0&amp;t=ffffffff999c3159" type="text/javascript"></script>
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'mpp_page_MySubscriptions', ['tUpdatePanel1',''], [], [], 90, '');
+//]]>
+</script>
+
+    
+    <div id="UpdateProgress1" style="display:none;">
+	
+                <div class="mpp_progressIndicator">Loading, please wait...</div>
+            
+</div>
+    
+    <div id="UpdatePanel1">
+	
+
+            <h1 class="mpp_formTitle">My Subscriptions</h1>
+
+            
+
+            <table class="formTable" id="mpp_GridSubscriptions" cellpadding="0" cellspacing="0" width="100%" class="mpp_Grid"><tr class="mpp_gridHeader"><th class="publication">Publication</th><th class="description">Description</th><th class="subscribed">Subscribed</th></tr><tr class="mpp_gridRowAlternate"><td class="publication">Big Publication!</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_14" name="p_14"/></td></tr><tr class="mpp_gridRow"><td class="publication">Big Publication!1</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_42" name="p_42"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">List_1</td><td class="description">No subs here - syncing with mailchimp</td><td class="subscribed" align="center"><input type="checkbox" id="p_19" name="p_19"/></td></tr><tr class="mpp_gridRow"><td class="publication">Megan's Mighty List</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_61" name="p_61"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">News for Men</td><td class="description">Stay current on happenings in the Men's Ministry!</td><td class="subscribed" align="center"><input type="checkbox" id="p_1" name="p_1"/></td></tr><tr class="mpp_gridRow"><td class="publication">News for Men 2</td><td class="description">Stay current on happenings in the Men's Ministry!</td><td class="subscribed" align="center"><input type="checkbox" id="p_32" name="p_32"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">News for Women</td><td class="description">Stay current on happenings in the Women's Ministry!</td><td class="subscribed" align="center"><input type="checkbox" id="p_34" name="p_34"/></td></tr><tr class="mpp_gridRow"><td class="publication">News for Women</td><td class="description">Stay current on happenings in the Women's Ministry!</td><td class="subscribed" align="center"><input type="checkbox" id="p_3" name="p_3"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">Newsletter - Weekly</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_2" name="p_2"/></td></tr><tr class="mpp_gridRow"><td class="publication">Newsletter - Weekly 2</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_33" name="p_33"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">Newsletter Test</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_58" name="p_58"/></td></tr><tr class="mpp_gridRow"><td class="publication">Parents of 0 to 24mo</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_37" name="p_37"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">Parents of 0 to 24mo</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_8" name="p_8"/></td></tr><tr class="mpp_gridRow"><td class="publication">Parents of 10 to 12yrs old</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_12" name="p_12"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">Parents of 10 to 12yrs old</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_40" name="p_40"/></td></tr><tr class="mpp_gridRow"><td class="publication">Parents of 2 to 5</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_10" name="p_10"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">Parents of 2 to 5</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_38" name="p_38"/></td></tr><tr class="mpp_gridRow"><td class="publication">Parents of 6 to 9yrs old</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_39" name="p_39"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">Parents of 6 to 9yrs old</td><td class="description"></td><td class="subscribed" align="center"><input type="checkbox" id="p_11" name="p_11"/></td></tr><tr class="mpp_gridRow"><td class="publication">QA Publications</td><td class="description">Use to test portal publication subscribing and Mailchimp list sync'ing</td><td class="subscribed" align="center"><input type="checkbox" id="p_13" name="p_13"/></td></tr><tr class="mpp_gridRowAlternate"><td class="publication">QA Publications</td><td class="description">Use to test portal publication subscribing and Mailchimp list sync'ing</td><td class="subscribed" align="center"><input type="checkbox" id="p_41" name="p_41"/></td></tr></table>
+
+            <div class="mpp_formField mpp_bottomButtons">
+                <input type="submit" name="btnSave" value="Update Subscriptions" id="btnSave" class="mpp_navLink" />
+            </div>
+            <br />
+
+            <h1 class="mpp_formTitle">Opt Out</h1>
+    
+            <span OnClientClick="checkButton(this);"><input id="chkOptOut" type="checkbox" name="chkOptOut" /><label for="chkOptOut">Would you like to opt out of all e-mails?</label></span>
+
+            <div class="mpp_formField mpp_bottomButtons">
+                <input type="submit" name="btnOptOut" value="Update Opt Out Status" id="btnOptOut" class="mpp_navLink" />
+            </div>
+
+        
+</div>
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8C528188" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAARrYBj6pCDzFigUkFMjbY2flliAPKY+KvRmniYVjNuQiOowJEtvrwiFmqi7/sai+77VngpeenMdoq6ijJmflIUdlAK7+p+Ck+ZiVVnPRKhGAOFHOH85leREs1PBM3igq98=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":100,"dynamicLayout":true}, null, null, $get("UpdateProgress1"));
+});
+//]]>
+</script>
+</form>
+        </div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
