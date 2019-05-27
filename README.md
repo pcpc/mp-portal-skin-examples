@@ -4,7 +4,7 @@ Ministry Platform Portal Skin Examples
 
 These example use the Bootstrap CSS Framework.
 
-Note: Default_Gray --> is incomplete (do not use)
+*Note: Default_Gray --> is incomplete (do not use)*
 
 
 ### Real portal page (you can use the menu to explore):
