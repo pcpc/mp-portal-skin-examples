@@ -15,6 +15,6 @@ These example use the Bootstrap CSS Framework.
 
 <https://support.ministryplatform.com/portal/skin_testing.aspx?template=Default_Gray>
 
-<https://support.ministryplatform.com/portal/skin_testing.aspx?template=Responsive>
+**<https://support.ministryplatform.com/portal/skin_testing.aspx?template=Responsive>**
 
 <https://support.ministryplatform.com/portal/skin_testing.aspx?template=IFrame>
